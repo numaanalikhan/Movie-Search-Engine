@@ -57,7 +57,7 @@ function App (){
               src={item.poster_path ? `https://image.tmdb.org/t/p/w300_and_h450_bestv2/${item.poster_path}` : "https://th.bing.com/th/id/OIP.P3Nx5kwYeeCBTPNd1dF7ygAAAA?pid=ImgDet&w=134&h=189&c=7"}
               alt={item.title}/>
               <div className="h-[100%] p-4 text-center text-[12px]">
-                <p className="">{item.title}</p>
+                <p className="whitespace-nowrap overflow-hidden text-overflow-ellipsis">{item.title}</p>
               </div>
              </div>
             )
